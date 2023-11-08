@@ -9,13 +9,13 @@
                         connectionURL="jdbc:mysql://127.0.0.1:3306/formazione" userId="root" password="password" />
 
         <!--    folder entity di java -->
-        <javaModelGenerator targetPackage="com.example.mybatis.model" targetProject="src/main/java"/>
+        <javaModelGenerator targetPackage="com.example.mybatis.model" targetProject="mybatis-module/src/main/java"/>
 
         <!--  folder Mapper xml -->
-        <sqlMapGenerator targetPackage="mybatis.mapper" targetProject="src/main/resources"/>
+        <sqlMapGenerator targetPackage="mybatis.mapper" targetProject="mybatis-module/src/main/resources"/>
 
         <!--    folder interfacce mapper -->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.example.mybatis.mapper" targetProject="src/main/java"/>
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.example.mybatis.mapper" targetProject="mybatis-module/src/main/java"/>
 
 
 

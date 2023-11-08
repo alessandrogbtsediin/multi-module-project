@@ -2,15 +2,25 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>multi-module-project</artifactId>
-        <groupId>com.example</groupId>
-        <version>0.0.1-SNAPSHOT</version>
-    </parent>
     <modelVersion>4.0.0</modelVersion>
 
+
+    <parent>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <groupId>org.springframework.boot</groupId>
+        <version>3.1.5</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+
+
+    <groupId>com.example</groupId>
     <artifactId>mybatis-module</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+
     <packaging>jar</packaging>
+    <name>mybatis-module</name>
+    <description>Demo project for Spring Boot</description>
 
     <properties>
         <maven.compiler.source>19</maven.compiler.source>
@@ -66,15 +76,7 @@
 
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-
-
-
             <!--			plugin del generator (generatorConfig) -->
-
             <plugin>
                 <groupId>org.mybatis.generator</groupId>
                 <artifactId>mybatis-generator-maven-plugin</artifactId>
@@ -84,9 +86,6 @@
                     <overwrite>true</overwrite>
                 </configuration>
             </plugin>
-
-
-
         </plugins>
     </build>
 

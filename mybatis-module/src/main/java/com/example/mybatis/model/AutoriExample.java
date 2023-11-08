@@ -1,4 +1,4 @@
-package it.formazione.libreria.mybatis.model;
+package com.example.mybatis.model;
 
 import java.util.ArrayList;
 import java.util.List;
