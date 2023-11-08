@@ -15,8 +15,6 @@
 	<modules>
 		<module>service-module</module>
 		<module>controller-module</module>
-		<module>service-module</module>
-		<module>controller-module</module>
 		<module>mybatis-module</module>
 	</modules>
 
