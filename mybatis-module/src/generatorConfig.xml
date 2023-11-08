@@ -18,6 +18,7 @@
         <javaClientGenerator type="XMLMAPPER" targetPackage="com.example.mybatis.mapper" targetProject="src/main/java"/>
 
 
+
         <!--  tabelle da generare - commenta quelle da non modificare  -->
             <table tableName="autori" />
         <!--    <table tableName="libri" />-->
